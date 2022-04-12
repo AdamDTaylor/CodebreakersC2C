@@ -1,24 +1,3 @@
-"""
-Ascii caps_nums list[range A ascii num - Z ascii num]
-Ascii low_nums lsit[range a ascii num - z ascii num]
-def decrypt:
-    make temp string
-    read file
-    convert to string
-    for Strings in list
-        for range string.length
-            append temp string ascii - 3
-    return temp
-COMPLETED 4/11/22 NEXT:
-def encrypt:
-    read file
-    put strings in list
-    for strings in list
-        for chr in strings
-            append temp string ascii + 3
-    return temp
-"""
-
 def decrypt(file):
     strings = []
     decrypt_strings = []
@@ -67,11 +46,7 @@ def encrypt(file):
             encrypted = ""
     return encrypt_strings
 
-#my_file = r"C:\Users\adamd\Downloads\TestFile.txt"
-
 encrypt_file = r"C:\Users\adamd\Downloads\ThisTextFile.txt"
-
-#messages = decrypt(my_file)
 
 encrypt_messages = encrypt(encrypt_file)
 print(encrypt_messages)
